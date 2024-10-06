@@ -20,9 +20,6 @@
 
   /* Style the buttons */
   .button {
-    position: absolute;
-    bottom: 10px;
-    left: 10px;
     padding: 10px 20px;
     background-color: #3498db;
     color: white;
@@ -40,18 +37,13 @@
 <body>
 
 <div class="video-container">
-  <video class="video" controls>
-    <source src="https://github.com/Bartosz8291/Paprika-s-Trilion-Midi-REBLACKED-.mp4/raw/refs/heads/main/Paprika's%20Trilion%20Midi%20(REBLACKED).mp4" type="video/mp4">
+  <video class="video" controls> <source src="https://github.com/Bartosz8291/Paprika-s-Trilion-Midi-REBLACKED-.mp4/raw/refs/heads/main/Paprika's%20Trilion%20Midi%20(REBLACKED).mp4" type="video/mp4">
     Your browser does not support the video tag.
   </video>
-  <button class="button play" onclick="playVideo()">Play</button>
 </div>
 
 <script>
-function playVideo() {
-  const video = document.querySelector('.video');
-  video.play();
-}
+  // No JavaScript needed as the play button functionality is handled by the "controls" attribute
 </script>
 
 </body>
