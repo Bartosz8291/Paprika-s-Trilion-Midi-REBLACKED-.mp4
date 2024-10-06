@@ -44,8 +44,15 @@
     <source src="https://github.com/Bartosz8291/Paprika-s-Trilion-Midi-REBLACKED-.mp4/raw/refs/heads/main/Paprika's%20Trilion%20Midi%20(REBLACKED).mp4" type="video/mp4">
     Your browser does not support the video tag.
   </video>
-  <button class="button play">Play</button>
+  <button class="button play" onclick="playVideo()">Play</button>
 </div>
+
+<script>
+function playVideo() {
+  const video = document.querySelector('.video');
+  video.play();
+}
+</script>
 
 </body>
 </html>
